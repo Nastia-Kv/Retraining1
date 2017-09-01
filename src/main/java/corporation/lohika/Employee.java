@@ -1,31 +1,37 @@
 package corporation.lohika;
 
-import javax.management.relation.Role;
-
 public abstract class Employee {
-    private corporation.lohika.Role role;
+
+    private final String firstName;
+    private final String lastName;
+    private final Role role;
     private int id;
-    private String firstName;
-    private String lastName;
     private int age;
 
+    void setId(int id){
+        this.id = id;
+    }
+    public int getId() {
+        return id;
+    }
 
     public Role getRole() {
         return role;
     }
 
-    void setId(){
-
-
+    public void setAge(int age) {
+        this.age = age;
     }
-    public int getId() {
-        return id;
+    public int getAge() {
+        return age;
     }
-protected Employee(String firstName, String lastName, corporation.lohika.Role role){
+
+protected Employee(String firstName, String lastName, Role role){
 
     this.firstName = firstName;
     this.lastName = lastName;
     this.role = role;
-    this.age = age;
+
 }
+
 }
