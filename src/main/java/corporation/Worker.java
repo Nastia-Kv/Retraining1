@@ -6,6 +6,6 @@ public class Worker extends Employee {
     }
 
     public void hireWorker(String name){
-        System.out.println("Worker " + Role.WORKER + " " + "cannot hire anybody");
+        System.out.println("Worker " + getFirstName() + " " + "cannot hire anybody");
     }
 }
