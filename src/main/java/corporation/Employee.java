@@ -1,10 +1,10 @@
 package corporation;
 
-public abstract class Employee {
+public abstract class Employee{
 
     private String firstName;
     private String lastName;
-    Role role;
+    private Role role;
     private int id;
     private int age;
 
@@ -46,12 +46,6 @@ public abstract class Employee {
         return  " " + getFirstName() + " " + getLastName()+ " ";
     }
 
-    public void hireManager(String name){
-        System.out.println(name);
-    }
 
-    public void hireWorker1(String name){
-        System.out.println("Director " + Role.MANAGER + " " + "hired" + " worker " + name);
-    }
 
 }

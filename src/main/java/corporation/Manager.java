@@ -5,7 +5,4 @@ public class Manager extends Employee {
         super(firstName, lastName, Role.MANAGER);
     }
 
-    public void hireWorker(String name){
-        System.out.println("Manager " + getFirstName() + " " + "hired" + " worker " + name);
-    }
-}
+   }

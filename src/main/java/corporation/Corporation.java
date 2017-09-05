@@ -10,8 +10,7 @@ public class Corporation {
     private int id = 1;
 
    public void addEmployee(Employee employee){
-       employee.setId(id);
-       id++;
+       employee.setId(id++);
        listOfEmployees.add(employee);
        System.out.println("Employee" + employee + "added");
    }
@@ -27,33 +26,56 @@ public class Corporation {
          }
     }
 
-    public void printAllWorkers(){
-        System.out.println("Workers");
-        for (Employee employee : listOfEmployees){
-            if (employee.getRole()==Role.WORKER){
-                System.out.println(employee);
-            }
-        }
-    }
+//    public void printAllWorkers(){
+//        System.out.println("Workers");
+//        for (Employee employee : listOfEmployees){
+//            if (employee.getRole()==Role.WORKER){
+//                System.out.println(employee);
+//            }
+//        }
+//    }
+//
+//    public void printAllManagers(){
+//        System.out.println("Managers");
+//        for (Employee employee : listOfEmployees){
+//            if (employee.getRole()==Role.MANAGER){
+//                System.out.println(employee);
+//            }
+//        }
+//    }
+//
+//    public void printAllDirectors(){
+//        System.out.println("Directors");
+//        for (Employee employee : listOfEmployees){
+//            if (employee.getRole()==Role.DIRECTOR){
+//                System.out.println(employee);
+//            }
+//        }
+//    }
 
-    public void printAllManagers(){
-        System.out.println("Managers");
-        for (Employee employee : listOfEmployees){
-            if (employee.getRole()==Role.MANAGER){
-                System.out.println(employee);
-            }
-        }
-    }
-
-    public void printAllDirectors(){
-        System.out.println("Directors");
-        for (Employee employee : listOfEmployees){
-            if (employee.getRole()==Role.DIRECTOR){
-                System.out.println(employee);
-            }
-        }
-    }
+//    public void printEmployees(Role role){
+//            for (Employee employee : listOfEmployees){
+//                if (employee.getRole()==Role.DIRECTOR)
+//            System.out.println(employee.getFirstName());
+//                if (employee.getRole()==Role.MANAGER)
+//            System.out.println(employee.getFirstName());
+//                else System.out.println(employee.getFirstName());
+//
+//        }
+//    }
 
 
 
-}
+//    public void hireEmployees(Role employeeWhoHires, Role employeeWhoHired){
+//        if (employeeWhoHires.getNumber() > employeeWhoHired.getNumber()){
+//            listOfEmployees.add();
+//
+//        }
+//
+//    }
+
+
+
+
+
+

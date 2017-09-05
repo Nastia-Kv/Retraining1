@@ -5,16 +5,5 @@ public class Director extends Employee {
         super(firstName, lastName, Role.DIRECTOR);
     }
 
-
-    public void hireManager1(String name){
-        System.out.println(name);
-    }
-
-    public void hireWorker1(String name){
-        System.out.println("Director " + getFirstName() + " " + "hired" + " worker " + name);
-    }
-
-
-
 }
 

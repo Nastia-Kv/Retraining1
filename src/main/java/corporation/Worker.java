@@ -5,7 +5,4 @@ public class Worker extends Employee {
         super(firstName, lastName, Role.WORKER);
     }
 
-    public void hireWorker(String name){
-        System.out.println("Worker " + getFirstName() + " " + "cannot hire anybody");
     }
-}
