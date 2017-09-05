@@ -23,7 +23,7 @@ public enum Role {
 
     @Override
     public String toString(){
-        return getNumber() + getPosition();
+        return getPosition();
     }
 
 

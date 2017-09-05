@@ -9,38 +9,53 @@ public class Main {
         Corporation lohika = new Corporation();
 
         Employee worker = new Worker("Nastia", "Kvas");
-        //Worker worker1 = new Worker("Pavlo", "Petriv");
         Employee manager = new Manager("Oksana", "Ivaniuk");
         Employee director = new Director("Zoriana", "Petriv");
-        //Director director1 = new Director("Zoriana", "Petriv");
+
+        System.out.println("Adding employees using addEmployee() method");
+        System.out.println();
+
+        //lohika.addEmployee(worker);
+        //lohika.addEmployee(manager);
+        lohika.addEmployee(director);
+
+        System.out.println("=============================================================");
+        System.out.println("Printing all employees");
+        System.out.println();
+
+        lohika.printAllEmployees();
+        System.out.println("=============================================================");
+
+        lohika.removeEmployee(worker);
+        System.out.println("=============================================================");
+        System.out.println();
+
+        lohika.printAllEmployees();
+        System.out.println();
+
+        System.out.println("=============================================================");
+
+        lohika.printEmployeesBasedOnRole(DIRECTOR);
+        lohika.printEmployeesBasedOnRole(MANAGER);
+        lohika.printEmployeesBasedOnRole(WORKER);
+        System.out.println("=============================================================");
+
+        lohika.hireEmployees(director, manager);
+        lohika.printAllEmployees();
+        System.out.println();
+
+        //lohika.hireEmployees(director, worker);
+        lohika.printAllEmployees();
         System.out.println();
 
         lohika.addEmployee(worker);
-        lohika.addEmployee(manager);
-        lohika.addEmployee(director);
-//
-//        lohika.printAllEmployees();
-//
-//        lohika.removeEmployee(worker);
-//        System.out.println();
-//
-//
-//        System.out.println("test1");
-//        System.out.println("test");
-//        System.out.println();
-//
-//        lohika.printAllEmployees();
-//        System.out.println();
-//
-//        System.out.println();
-//
-//        lohika.printAllDirectors();
-//        lohika.printAllWorkers();
-//        lohika.printAllManagers();
 
-        lohika.printEmployees(DIRECTOR);
-        //lohika.printEmployees(MANAGER);
-        //lohika.printEmployees(WORKER);
+        System.out.println("=============================================================");
+        lohika.printEmployeesBasedOnRole(DIRECTOR);
+        lohika.printEmployeesBasedOnRole(MANAGER);
+        lohika.printEmployeesBasedOnRole(WORKER);
+
+        lohika.removeEmployee(worker);
 
 
     }

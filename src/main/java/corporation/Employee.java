@@ -1,6 +1,6 @@
 package corporation;
 
-public abstract class Employee{
+public abstract class Employee {
 
     private String firstName;
     private String lastName;
@@ -8,7 +8,7 @@ public abstract class Employee{
     private int id;
     private int age;
 
-    protected Employee(String firstName, String lastName, Role role){
+    protected Employee(String firstName, String lastName, Role role) {
 
         this.firstName = firstName;
         this.lastName = lastName;
@@ -16,9 +16,10 @@ public abstract class Employee{
 
     }
 
-    void setId(int id){
+    void setId(int id) {
         this.id = id;
     }
+
     public int getId() {
         return id;
     }
@@ -30,6 +31,7 @@ public abstract class Employee{
     public void setAge(int age) {
         this.age = age;
     }
+
     public int getAge() {
         return age;
     }
@@ -42,10 +44,10 @@ public abstract class Employee{
         return lastName;
     }
 
+    @Override
     public String toString() {
-        return  " " + getFirstName() + " " + getLastName()+ " ";
+        return getFirstName() + " " + getLastName();
     }
-
 
 
 }
