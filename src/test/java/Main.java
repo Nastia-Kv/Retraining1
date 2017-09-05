@@ -39,9 +39,9 @@ public class Main {
 
         System.out.println("ffdsfsffs");
 
-        lohika.printAllDirectors(DIRECTOR);
-        lohika.printAllWorkers(WORKER);
-        lohika.printAllManagers(MANAGER);
+        lohika.printAllDirectors();
+        lohika.printAllWorkers();
+        lohika.printAllManagers();
 
     }
 
