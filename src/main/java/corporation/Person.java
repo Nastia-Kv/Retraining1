@@ -1,4 +1,4 @@
-package corporation.lohika;
+package corporation;
 
 import javax.management.relation.Role;
 

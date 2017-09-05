@@ -1,7 +1,9 @@
-package corporation.lohika;
+package corporation;
 
 public enum Role {
     WORKER,
     MANAGER,
     DIRECTOR
+
 }
+
