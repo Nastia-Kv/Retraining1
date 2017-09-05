@@ -26,13 +26,18 @@ public class Main {
         System.out.println("test");
 
         lohika.printAllEmployees();
-//        director1.hireManager1("Oksana");
-//        director.hireManager("Yulia");
-//        director1.hireWorker1("Igor");
-//
-//        manager.hireWorker1("Eugene");
-//        worker1.hireWorker("Natalia");
+        director1.hireManager1("Oksana");
+        director.hireManager("Yulia");
+        director1.hireWorker1("Igor");
 
+        manager.hireWorker1("Eugene");
+        worker1.hireWorker("Natalia");
+
+        System.out.println("ffdsfsffs");
+
+        lohika.printAllDirectors();
+        lohika.printAllWorkers();
+        lohika.printAllManagers();
 
     }
 

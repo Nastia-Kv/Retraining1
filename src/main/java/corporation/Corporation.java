@@ -27,5 +27,30 @@ public class Corporation {
          }
     }
 
+    public void printAllWorkers(){
+        for (Employee employee : listOfEmployees){
+            if (employee.getRole()==Role.WORKER){
+                System.out.println(employee);
+            }
+        }
+    }
+
+    public void printAllManagers(){
+        for (Employee employee : listOfEmployees){
+            if (employee.getRole()==Role.MANAGER){
+                System.out.println(employee);
+            }
+        }
+    }
+
+    public void printAllDirectors(){
+        for (Employee employee : listOfEmployees){
+            if (employee.getRole()==Role.DIRECTOR){
+                System.out.println(employee);
+            }
+        }
+    }
+
+
 
 }
