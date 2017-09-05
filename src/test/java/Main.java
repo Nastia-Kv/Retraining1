@@ -2,6 +2,7 @@ import corporation.*;
 
 import static corporation.Role.DIRECTOR;
 import static corporation.Role.MANAGER;
+import static corporation.Role.WORKER;
 
 public class Main {
     public static void main(String[] args) {
@@ -15,14 +16,17 @@ public class Main {
         Director director1 = new Director("Zoriana", "Petriv");
 
         lohika.addEmployee(worker);
+        lohika.addEmployee(worker1);
         lohika.addEmployee(manager);
         lohika.addEmployee(director);
+        lohika.addEmployee(director1);
 
         lohika.printAllEmployees();
 
         lohika.removeEmployee(worker);
 
 
+        System.out.println("test1");
         System.out.println("test");
 
         lohika.printAllEmployees();
@@ -35,9 +39,9 @@ public class Main {
 
         System.out.println("ffdsfsffs");
 
-        lohika.printAllDirectors();
-        lohika.printAllWorkers();
-        lohika.printAllManagers();
+        lohika.printAllDirectors(DIRECTOR);
+        lohika.printAllWorkers(WORKER);
+        lohika.printAllManagers(MANAGER);
 
     }
 

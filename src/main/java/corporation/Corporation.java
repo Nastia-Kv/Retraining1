@@ -27,7 +27,8 @@ public class Corporation {
          }
     }
 
-    public void printAllWorkers(){
+    public void printAllWorkers(Role role){
+        System.out.println("Workers");
         for (Employee employee : listOfEmployees){
             if (employee.getRole()==Role.WORKER){
                 System.out.println(employee);
@@ -35,7 +36,8 @@ public class Corporation {
         }
     }
 
-    public void printAllManagers(){
+    public void printAllManagers(Role role){
+        System.out.println("Managers");
         for (Employee employee : listOfEmployees){
             if (employee.getRole()==Role.MANAGER){
                 System.out.println(employee);
@@ -43,7 +45,8 @@ public class Corporation {
         }
     }
 
-    public void printAllDirectors(){
+    public void printAllDirectors(Role role){
+        System.out.println("Directors");
         for (Employee employee : listOfEmployees){
             if (employee.getRole()==Role.DIRECTOR){
                 System.out.println(employee);
